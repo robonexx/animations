@@ -1,0 +1,124 @@
+@import url('./nav.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    background-color: transparent;
+    background: linear-gradient(0deg, rgba(231, 231, 231, 0.397), rgba(69, 69, 187, 0.466));
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 1;
+}
+
+
+.hero_bg {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero_bg > svg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.hero_bg > svg.active {
+    fill: #282828;
+    background-color: rgba(5, 5, 5, 0.363);
+}
+
+#darkmode {
+    position: fixed;
+    top: 20vh;
+    right: 10vw;
+    z-index: 1000;
+    
+}
+.sun {
+    position: relative;
+    cursor: pointer;
+    z-index: 100;
+    top: 0;
+    left: 0;
+}
+
+.action_btn {
+    position: absolute;
+    top: 65%;
+    left: 30%;
+    z-index: 100;
+    padding: 3vmin 5vmin;
+    background-color: #c38d9e;
+    color: white;
+    font-size: clamp(1.2rem, 1.5vw, 2rem);
+    border-radius: 5px;
+}
+
+main {
+    position: absolute;
+    height: 100%;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 10vmin;
+    background-color: #282828;
+    display: grid;
+    place-content: center;
+    align-content: center;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    background-color: antiquewhite;
+}
+
+.content p {
+    font-size: clamp(1rem, 2vw, 2rem);
+    padding: 10vmin;
+}
+
+.images {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+img {
+    width: calc(25% - 50px);
+    height: auto;
+    margin: 0 1rem;
+}
